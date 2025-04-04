@@ -110,3 +110,5 @@ class ProductController extends Controller
         ], Response::HTTP_OK);
     }
 }
+
+Route::apiResource('products', App\Http\Controllers\API\ProductController::class);

@@ -43,3 +43,7 @@ class Producto extends Model
         'deleted_at'  // Para el borrado suave
     ];
 }
+
+use App\Http\Controllers\API\ProductController;
+
+Route::apiResource('productos', ProductController::class);
